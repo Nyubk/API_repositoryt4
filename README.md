@@ -31,3 +31,58 @@ Entrenados sobre el Iris Dataset usando los siguientes 4 parámetros:
 
 
 
+
+# github Docker
+
+Hacer un docker para que se guarde la API que hicimos previamente de entrenamiento de machine learning: 
+
+Para que sirve Docker
+	1. Empaqueta tu aplicación junto con todas sus dependencias en una imagen.
+
+	2. Ejecuta esa imagen en contenedores que pueden correr en cualquier máquina que tenga Docker instalado.
+
+	3. Evita el clásico “en mi máquina funciona”, asegurando que la aplicación se comporta igual en desarrollo, pruebas o producción.
+
+
+- Se crea un archivo Dockerfile
+
+´´´<FROM python:3.10
+
+WORKDIR /app
+
+# Copiar archivos
+COPY app.py .
+COPY models/ ./models/
+
+# Instalar dependencias
+RUN pip install flask joblib scikit-learn
+
+EXPOSE 5001
+
+# Comando de inicio
+CMD ["python", "app.py"]>´´´
+
+
+
+
+
+## **Pasos**
+
+1. Primero se crea la carpeta machine__learning_api dentro de esta se crea el archivo requeriments.txt y el directorio models que alojara a nuestros modelos una vez ejecutados
+2. El archivo requeriments.txt indican las librerias a usar en el entorno virtual
+3. Se crea el archivo iris.models.py que contiene el script para generar los modelos
+4. Se crea el archivo app.py como clase principal
+5. Se crea un entorno virtual, se ejecuta directo sobre shell de Windows en el directorio machine__learning_api
+6. Se instalan los modulos necesarios descritos en requeriments.txt
+7. Se generan los modelos usando la clase iris_models.py
+8. Se levanta el servidor mediante la clase app.py
+9. Se valida en la dirección http://http://127.0.0.1:5001/ (ya que en :5000 falla)
+10. Abro Postman y ejecuto un POST a las siguientes direcciones
+   	- http://127.0.0.1:5001/logistic
+   	- http://127.0.0.1:5001/randomforest
+   	- http://127.0.0.1:5001/svm
+   	- http://127.0.0.1:5001/tree_decision
+
+[^1]:Se anexa evidencia en directorio **evidencia** 
+
+
