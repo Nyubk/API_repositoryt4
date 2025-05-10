@@ -65,4 +65,4 @@ Para que sirve Docker
 
 2. Establece el puerto 5001
 
-3. Se establece el comando ´´´´[python, app.py]´´´´
+3. Se establece el comando ```python app.py``` para inicializar el docker
