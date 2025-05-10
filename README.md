@@ -27,7 +27,7 @@ Entrenados sobre el Iris Dataset usando los siguientes 4 parámetros:
    	- http://127.0.0.1:5001/svm
    	- http://127.0.0.1:5001/tree_decision
 
-^Se anexa evidencia en directorio **evidencia** 
+[^1]:Se anexa evidencia en directorio **evidencia** 
 
 
 
