@@ -8,7 +8,7 @@ Se seleccionaron 4 modelos:
     (Regresión, Árbol de decisiones, SVM, Bosque Aleatorio)
 
 Entrenados sobre el Iris Dataset usando los siguientes 4 parámetros:
-	"sepal_length",	"sepal_width",	"petal_length",	"petal_width"
+	**"sepal_length", "sepal_width", "petal_length", "petal_width"**
 
 ## **Pasos**
 
