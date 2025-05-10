@@ -22,8 +22,7 @@ Entrenados sobre el Iris Dataset usando los siguientes 4 parámetros:
   ├── iris_models.py
   └── requirements.txt
 
--Primero se crea la carpeta machine__learning_api dentro de esta se crea el archivo requeriments.txt y el directorio models
-2. 
+1. Primero se crea la carpeta machine__learning_api dentro de esta se crea el archivo requeriments.txt y el directorio models 
 
 
 
