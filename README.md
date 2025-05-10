@@ -37,30 +37,29 @@ Entrenados sobre el Iris Dataset usando los siguientes 4 parámetros:
 Hacer un docker para que se guarde la API que hicimos previamente de entrenamiento de machine learning: 
 
 Para que sirve Docker
-	1. Empaqueta tu aplicación junto con todas sus dependencias en una imagen.
+1. Empaqueta tu aplicación junto con todas sus dependencias en una imagen.
 
-	2. Ejecuta esa imagen en contenedores que pueden correr en cualquier máquina que tenga Docker instalado.
+2. Ejecuta esa imagen en contenedores que pueden correr en cualquier máquina que tenga Docker instalado.
 
-	3. Evita el clásico “en mi máquina funciona”, asegurando que la aplicación se comporta igual en desarrollo, pruebas o producción.
-
+3. Evita el clásico “en mi máquina funciona”, asegurando que la aplicación se comporta igual en desarrollo, pruebas o producción.
 
 - Se crea un archivo Dockerfile
 
-<FROM python:3.10
+	FROM python:3.10
 
-WORKDIR /app
+	WORKDIR /app
 
-# Copiar archivos
-COPY app.py .
-COPY models/ ./models/
+	# Copiar archivos
+	COPY app.py .
+	COPY models/ ./models/
 
-# Instalar dependencias
-RUN pip install flask joblib scikit-learn
+	# Instalar dependencias
+	RUN pip install flask joblib scikit-learn
 
-EXPOSE 5001
+	EXPOSE 5001
 
-# Comando de inicio
-CMD ["python", "app.py"]>
+	# Comando de inicio
+	CMD ["python", "app.py"]
 
 
 
