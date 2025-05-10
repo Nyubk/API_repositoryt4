@@ -21,7 +21,7 @@ Entrenados sobre el Iris Dataset usando los siguientes 4 parámetros:
 7. Se generan los modelos usando la clase iris_models.py
 8. Se levanta el servidor mediante la clase app.py
 9. Se valida en la dirección http://http://127.0.0.1:5001/ (ya que en :5000 falla)
-10. Abro Postman y ejecuto un POST a las siguientes direcciones:
+10. Abro Postman y ejecuto un POST a las siguientes direcciones[^1]:
    	- http://127.0.0.1:5001/logistic
    	- http://127.0.0.1:5001/randomforest
    	- http://127.0.0.1:5001/svm
