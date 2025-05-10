@@ -10,7 +10,7 @@ Se seleccionaron 4 modelos:
 Entrenados sobre el Iris Dataset usando los siguientes 4 parámetros:
 	"sepal_length",	"sepal_width",	"petal_length",	"petal_width"
 
-##**Estructura de carpetas**
+**Estructura de carpetas**
   /machine__learning_api/
   │
   ├── models
@@ -22,7 +22,7 @@ Entrenados sobre el Iris Dataset usando los siguientes 4 parámetros:
   ├── iris_models.py
   └── requirements.txt
 
-1. Primero se crea la carpeta machine__learning_api dentro de esta se crea el archivo requeriments.txt y el directorio models
+-Primero se crea la carpeta machine__learning_api dentro de esta se crea el archivo requeriments.txt y el directorio models
 2. 
 
 
