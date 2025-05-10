@@ -46,7 +46,7 @@ Para que sirve Docker
 
 - Se crea un archivo Dockerfile
 
-´´´<FROM python:3.10
+<FROM python:3.10
 
 WORKDIR /app
 
@@ -60,7 +60,7 @@ RUN pip install flask joblib scikit-learn
 EXPOSE 5001
 
 # Comando de inicio
-CMD ["python", "app.py"]>´´´
+CMD ["python", "app.py"]>
 
 
 
