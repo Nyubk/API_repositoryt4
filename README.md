@@ -5,7 +5,7 @@ Para construir una API de ML con modulos preentrenados se siguieron los siguient
 
 Se seleccionaron 4 modelos:
 
-    (Regresión, Árbol de decisiones, SVM, Bosque Aleatorio)
+**Regresión, Árbol de decisiones, SVM, Bosque Aleatorio**
 
 Entrenados sobre el Iris Dataset usando los siguientes 4 parámetros:
 	**"sepal_length", "sepal_width", "petal_length", "petal_width"**
