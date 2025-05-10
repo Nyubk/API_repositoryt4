@@ -1,6 +1,6 @@
 # API_repositoryt4
 
-##**Primeros pasos**
+## **Primeros pasos**
 Para construir una API de ML con modulos preentrenados se siguieron los siguientes pasos:
 
 Se seleccionaron 4 modelos:
@@ -10,7 +10,7 @@ Se seleccionaron 4 modelos:
 Entrenados sobre el Iris Dataset usando los siguientes 4 parámetros:
 	"sepal_length",	"sepal_width",	"petal_length",	"petal_width"
 
-**Estructura de carpetas**
+## **Estructura de carpetas**
   /machine__learning_api/
   │
   ├── models
