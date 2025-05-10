@@ -61,27 +61,8 @@ Para que sirve Docker
 		# Comando de inicio
 		CMD ["python", "app.py"]
 
+1. En el contenedor tendrás un entorno completo de Python ya preparado, se establece /app como directorio de trabajo desde el que todas las operaciones se ejecutarán y se copia la clase app.py asi como el directorio completo de models, se instalan las librerias necesarias para funcionar (flask joblib scikit-learn)
 
+2. Establece el puerto 5001
 
-
-
-## **Pasos**
-
-1. Primero se crea la carpeta machine__learning_api dentro de esta se crea el archivo requeriments.txt y el directorio models que alojara a nuestros modelos una vez ejecutados
-2. El archivo requeriments.txt indican las librerias a usar en el entorno virtual
-3. Se crea el archivo iris.models.py que contiene el script para generar los modelos
-4. Se crea el archivo app.py como clase principal
-5. Se crea un entorno virtual, se ejecuta directo sobre shell de Windows en el directorio machine__learning_api
-6. Se instalan los modulos necesarios descritos en requeriments.txt
-7. Se generan los modelos usando la clase iris_models.py
-8. Se levanta el servidor mediante la clase app.py
-9. Se valida en la dirección http://http://127.0.0.1:5001/ (ya que en :5000 falla)
-10. Abro Postman y ejecuto un POST a las siguientes direcciones
-   	- http://127.0.0.1:5001/logistic
-   	- http://127.0.0.1:5001/randomforest
-   	- http://127.0.0.1:5001/svm
-   	- http://127.0.0.1:5001/tree_decision
-
-[^1]:Se anexa evidencia en directorio **evidencia** 
-
-
+3. Se establece el comando ´´´´[python, app.py]´´´´
